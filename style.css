@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  width: 100%;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(41, 38, 199);
+  background-color: rgb(41, 38, 199);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2.25rem;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 3.75rem;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 1.25rem;
+  }
+  .overlay .closebtn {
+    font-size: 2.5rem;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.625rem;
+  font-style: 600;
+}
+
+.sneaks {
+  height: 600px;
+}
+
+.sneaks img {
+  height: 600px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transform: rotate(-25deg);
+}
+.waviy {
+  position: relative;
+  text-align: center;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 6.25rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  60% {
+    transform: rotateY(360deg);
+  }
+}
+
+.avant {
+  margin-top: 1100px;
+  left: 20px;
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+.suivant {
+  margin-top: 1100px;
+  right: 20px;
+  position: absolute;
+  z-index: 2000;
+  cursor: pointer;
+}
+.slide {
+  float: left;
+  position: relative;
+  margin-left: 1px;
+  margin-top: 0px;
+}
+
+.Footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.75rem;
+  height: 300px;
+  padding-top: 70px;
+  width: 100%;
+}
+
+.Footer div {
+  text-align: left;
+}
+
+.water img {
+  height: max-content;
+  width: 100%;
+}
+
+.bubbles {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  margin-right: 50px;
+  background-color: rgb(41, 38, 199);
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  animation: up 4s infinite;
+}
+
+.bubble-2 {
+  left: 350px;
+  animation: up 12s infinite;
+  width: 20px;
+  height: 20px;
+}
+
+.bubble-3 {
+  left: 750px;
+  opacity: 0.3;
+  animation: up 12s infinite;
+  width: 30px;
+  height: 30px;
+}
+
+.bubble-4 {
+  left: 1150px;
+  animation: up 6s infinite;
+  width: 50px;
+  height: 50px;
+}
+
+.bubble-5 {
+  left: 54%;
+  animation: up 8s infinite;
+  width: 140px;
+  height: 140px;
+}
+
+.bubble-6 {
+  left: 300px;
+  opacity: 0.3;
+  animation: up 4s infinite;
+}
+
+.bubble-7 {
+  left: 670px;
+  animation: up 7s infinite;
+}
+
+.bubble-8 {
+  left: 1050px;
+  opacity: 0.3;
+  animation: up 4s infinite;
+}
+
+/* Bubbles Animation */
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-800px);
+  }
+}
+
+.slider {
+  background-color: rgb(41, 38, 199);
+  color: #ffffff;
+  height: 600px;
+  transition: all 0.5s ease-in-out;
+  background-position: bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+.description {
+  display: flex;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 2px;
+  background-color: rgb(41, 38, 199, 0);
+}
+
+.barre {
+  height: 100px;
+  width: 100px;
+}
+.barre img {
+  height: 200px;
+}
